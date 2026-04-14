@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: linear-gradient(135deg, #667eaa 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+#novaTarefa {
+  flex: 1;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+#novaTarefa:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+#adicionar {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-weight: 600;
+}
+
+#adicionar:hover {
+  transform: translate(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+#adicionar:active {
+  transform: translateY(0);
+}
+
+#listaTarefas {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#listaTarefas li {
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-left: 4px solid #667eaa;
+  font-size: 16px;
+  position: relative;
+}
+
+#listaTarefas li:hover {
+  background-color: #e9ecef;
+  transform: translateX(5px);
+}
+
+#listaTarefas li.concluida {
+  text-decoration: line-through;
+  opacity: 0.6;
+  border-left-color: #28a745;
+}
+
+.instrucoes {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #fff3cd;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+}
+
+.instrucoes h3 {
+  color: #856404;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.instrucoes p {
+  color: #856404;
+  font-size: 14px;
+  line-height: 1.6;
+}

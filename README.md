@@ -30,6 +30,7 @@ todo-list-js/
 ├── js/
 │   └── script.js
 ├── assets/
+    └── todo_list.png
 └── README.md
 ```
 
